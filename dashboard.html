@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBin</title>
+
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .container {
+        max-width: 960px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        height: 5em;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #eee;
+
+        .logo {
+            color: black;
+            font-weight: bold;
+            font-size: 1.5em;
+            width: 20%;
+        }
+    }
+    
+    ul.menu {
+        width: 50%;
+        justify-content: space-between;
+        list-style: none;
+        display: flex;
+
+        a {
+            text-decoration: none;
+            color: #333;
+            transition: .4s;
+            border-bottom: 2px solid transparent;
+
+            &:hover {
+                padding-bottom: 0;
+                border-bottom: 2px solid #333;
+            }
+        }
+    }
+
+    .content {
+        padding: 2em 0;
+        margin: 1em;
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        grid-gap: 1em;
+
+        .content_Maps {
+            width: 100%;
+        }
+
+        .content_bin {
+            width: 100%;
+            h1 {
+                margin-bottom: .5em;
+                padding-bottom: 20px;
+                
+            }
+            p {
+                margin-bottom: 1em;
+            }
+            .gallery {
+                display: grid;
+                height: 100px;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: .5em;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    footer {
+        padding-top: 2em;
+        border-top: 1px solid #eee;
+        text-align: center;
+    }
+
+
+</style>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div  class="logo">
+                    Dashboard
+                </div>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="content">
+                <div class="content_Maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15503.398875191246!2d100.75385788713272!3d13.727546814898645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d678ac259764f%3A0xabeebe57c8c9903e!2z4LiV4Li24LiB4LmC4Lir4Lil!5e0!3m2!1sen!2sth!4v1743326613001!5m2!1sen!2sth" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.8611227890133!2d100.76954427375333!3d13.726856686662414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d6744b507adb7%3A0x45451653b7ddb62c!2z4LmC4Lij4LiH4Lit4Liy4Lir4Liy4LijIEM!5e0!3m2!1sen!2sth!4v1743327020985!5m2!1sen!2sth" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.847458652558!2d100.77140717375333!3d13.727683586661641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d664bb01c1bf9%3A0xeff4767a9ffd58da!2sKMITL%20Department%20of%20Mechanical%20Engineering!5e0!3m2!1sen!2sth!4v1743327197758!5m2!1sen!2sth" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="content_bin">
+                    <h1>Bin 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab numquam ipsa asperiores corrupti accusantium suscipit velit magnam dolores, quo inventore perferendis tempore perspiciatis sit est quaerat repudiandae! Recusandae, ea molestias!</p>
+                    <div class="galllery">
+                        <img src="assets/images/Screenshot 2025-03-29 165048.png" alt="">
+                    </div>
+
+                    <h1>Bin 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab numquam ipsa asperiores corrupti accusantium suscipit velit magnam dolores, quo inventore perferendis tempore perspiciatis sit est quaerat repudiandae! Recusandae, ea molestias!</p>
+                    <div class="galllery">
+                        <img src="assets/images/Screenshot 2025-03-29 165131.png" alt="">
+                    </div>
+
+                    <h1>Bin 3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab numquam ipsa asperiores corrupti accusantium suscipit velit magnam dolores, quo inventore perferendis tempore perspiciatis sit est quaerat repudiandae! Recusandae, ea molestias!</p>
+                    <div class="galllery">
+                        <img src="assets/images/Screenshot 2025-03-29 165253.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Copyright 2025. Right Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

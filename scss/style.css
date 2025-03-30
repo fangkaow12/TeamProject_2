@@ -1,0 +1,19 @@
+body {
+  color: black;
+  font-family: Arial, sans-serif;
+}/*# sourceMappingURL=style.css.map */
+
+nav {
+  display: flex;
+  height: 5em;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+
+  .logo {
+    color: #cd3e3e;
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 20%;
+  }
+}
