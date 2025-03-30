@@ -62,6 +62,17 @@
         }
     }
 
+    
+    .map {
+    flex: 1;
+    max-width: 400px;
+    }
+
+    .content_bin h1 {
+        flex: 1;
+        margin-top: 2em; /* ปรับค่าตามต้องการ */
+    }
+
     .content {
         padding: 2em 0;
         margin: 1em;
@@ -77,9 +88,8 @@
             width: 100%;
             h1 {
                 margin-bottom: .5em;
-                padding-bottom: 20px;
-                
             }
+
             p {
                 margin-bottom: 1em;
             }
@@ -91,6 +101,8 @@
 
                 img {
                     height: 100%;
+                    width: 100%;
+                    max-height: 100px;
                 }
             }
         }
@@ -124,38 +136,56 @@
 
     <section>
         <div class="container">
-            <div class="content">
-                <div class="content_Maps">
+            <!-- Bin 1 -->
+            <div style="display: flex; margin-top: 40px;">
+                <!-- แผนที่ -->
+                <div style="flex: 1; padding: 10px;">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15503.398875191246!2d100.75385788713272!3d13.727546814898645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d678ac259764f%3A0xabeebe57c8c9903e!2z4LiV4Li24LiB4LmC4Lir4Lil!5e0!3m2!1sen!2sth!4v1743326613001!5m2!1sen!2sth" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.8611227890133!2d100.76954427375333!3d13.726856686662414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d6744b507adb7%3A0x45451653b7ddb62c!2z4LmC4Lij4LiH4Lit4Liy4Lir4Liy4LijIEM!5e0!3m2!1sen!2sth!4v1743327020985!5m2!1sen!2sth" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.847458652558!2d100.77140717375333!3d13.727683586661641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d664bb01c1bf9%3A0xeff4767a9ffd58da!2sKMITL%20Department%20of%20Mechanical%20Engineering!5e0!3m2!1sen!2sth!4v1743327197758!5m2!1sen!2sth" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="content_bin">
-                    <h1>Bin 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab numquam ipsa asperiores corrupti accusantium suscipit velit magnam dolores, quo inventore perferendis tempore perspiciatis sit est quaerat repudiandae! Recusandae, ea molestias!</p>
-                    <div class="galllery">
-                        <img src="assets/images/Screenshot 2025-03-29 165048.png" alt="">
-                    </div>
+            <!-- Bin 1 -->
+                <div style="flex: 1; padding: 10px;">
+                    <h2>Bin 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <img src="assets/images/Screenshot 2025-03-29 165048.png" width="100%" />
+                </div>
+            </div>
 
-                    <h1>Bin 2</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab numquam ipsa asperiores corrupti accusantium suscipit velit magnam dolores, quo inventore perferendis tempore perspiciatis sit est quaerat repudiandae! Recusandae, ea molestias!</p>
-                    <div class="galllery">
-                        <img src="assets/images/Screenshot 2025-03-29 165131.png" alt="">
-                    </div>
+            <hr style="margin: 40px 0; border: 1px solid #ccc;">
 
-                    <h1>Bin 3</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab numquam ipsa asperiores corrupti accusantium suscipit velit magnam dolores, quo inventore perferendis tempore perspiciatis sit est quaerat repudiandae! Recusandae, ea molestias!</p>
-                    <div class="galllery">
-                        <img src="assets/images/Screenshot 2025-03-29 165253.png" alt="">
-                    </div>
+            <!-- Bin 2 -->
+            <div style="display: flex; margin-top: 40px;">
+                <!-- แผนที่ -->
+                <div style="flex: 1;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.8611227890133!2d100.76954427375333!3d13.726856686662414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d6744b507adb7%3A0x45451653b7ddb62c!2z4LmC4Lij4LiH4Lit4Liy4Lir4Liy4LijIEM!5e0!3m2!1sen!2sth!4v1743327020985!5m2!1sen!2sth" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            <!-- Bin 2 -->
+                <div style="flex: 1; padding: 10px;">
+                    <h2>Bin 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <img src="assets/images/Screenshot 2025-03-29 165131.png" width="100%" />
+                </div>
+            </div>
+    
+            <hr style="margin: 40px 0; border: 1px solid #ccc;">
 
+            <!-- Bin 3 -->
+            <div style="display: flex; margin-top: 40px;">
+                <!-- แผนที่ -->
+                <div style="flex: 1;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.847458652558!2d100.77140717375333!3d13.727683586661641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d664bb01c1bf9%3A0xeff4767a9ffd58da!2sKMITL%20Department%20of%20Mechanical%20Engineering!5e0!3m2!1sen!2sth!4v1743327197758!5m2!1sen!2sth" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            <!-- Bin 3 -->
+                <div style="flex: 1; padding: 10px;">
+                    <h2>Bin 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <img src="assets/images/Screenshot 2025-03-29 165253.png" width="100%" />
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
+        <div class="container; flex: 1; padding: 10px;">
             <p>Copyright 2025. Right Reserved</p>
         </div>
     </footer>
